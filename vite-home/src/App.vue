@@ -4,7 +4,7 @@
  * @Autor: laikt
  * @Date: 2022-05-17 13:54:49
  * @LastEditors: laikt
- * @LastEditTime: 2022-05-17 15:52:53
+ * @LastEditTime: 2022-05-17 17:18:29
 -->
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
@@ -15,7 +15,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
 
-  <a-button msg="Hello Vue 3 + Vite" />
+  <HelloWorld msg="Hello Vue 3 + Vite" />
 </template>
 
 <style>

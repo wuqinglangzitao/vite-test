@@ -4,7 +4,7 @@
  * @Autor: laikt
  * @Date: 2022-05-17 13:54:20
  * @LastEditors: laikt
- * @LastEditTime: 2022-05-17 15:11:31
+ * @LastEditTime: 2022-05-17 17:21:11
  */
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
@@ -22,11 +22,7 @@ export default defineConfig({
       // remotes: {
       //   foo: "remote_foo"
       // },
-      shared: {
-        vue: {
-          requiredVersion: "^3.0.0"
-        }
-      }
+      shared: ["vue"]
     })
   ],
   build: {

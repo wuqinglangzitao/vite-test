@@ -4,21 +4,39 @@
  * @Autor: laikt
  * @Date: 2022-05-17 13:54:49
  * @LastEditors: laikt
- * @LastEditTime: 2022-05-17 15:49:00
+ * @LastEditTime: 2022-05-17 17:18:50
 -->
-<script setup>
-import { ref } from "vue";
 
+<script setup>
+import { ref, defineAsyncComponent } from "vue";
+const aButton = defineAsyncComponent(() => import("base/aButton"));
+console.log(aButton);
 defineProps({
   msg: String
 });
 
 const count = ref(0);
 </script>
+<script>
+// import { defineAsyncComponent } from "vue";
+// const aButton = defineAsyncComponent(() => import("base/aButton"));
+// console.log(aButton);
+// export default {
+//   components: {
+//     "a-Button": aButton
+//   },
+//   data() {
+//     return {
+//       show: false
+//     };
+//   }
+// };
+//
+</script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <aButton />
+  <a-Button></a-Button>
 </template>
 
 <style scoped>
